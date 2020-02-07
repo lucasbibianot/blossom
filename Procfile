@@ -1,1 +1,1 @@
-web: streamlit --server.enableCORS false --server.port $PORT app_blossom.py
+web: streamlit run --server.enableCORS false --server.port $PORT app_blossom.py
