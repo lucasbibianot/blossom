@@ -4,6 +4,11 @@ libxslt1-dev
 antiword 
 unrtf 
 poppler-utils 
+tesseract-ocr 
+tesseract-ocr-eng
+flac 
+ffmpeg 
+lame
 libmad0 
 libsox-fmt-mp3 
 sox 
