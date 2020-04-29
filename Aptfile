@@ -1,4 +1,13 @@
+python-dev 
+libxml2-dev 
+libxslt1-dev 
+antiword 
+unrtf 
 poppler-utils 
-tesseract-ocr 
-tesseract-ocr-eng
-tesseract-ocr-por
+libmad0 
+libsox-fmt-mp3 
+sox 
+libjpeg-dev 
+swig 
+libpulse-dev
+zlib1g-dev
