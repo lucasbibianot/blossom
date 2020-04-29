@@ -29,7 +29,7 @@ def tratar_retorno(linha):
     return {"cod_tarefa": str(cod_tarefa.group()), "descricao": descricao, "start": start_d, "end": end_d}
 
 
-def carregar_dataframe(nom_arquivo, encoding = 'ISO-8859-1'):
+def carregar_dataframe(nom_arquivo, encoding = 'UTF-8'):
     with open(f'{nom_arquivo}', 'rb') as arquivo:
         text = textract.process(f'{nom_arquivo}', method='tesseract')
         texto = text.decode(encoding)
