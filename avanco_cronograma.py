@@ -43,7 +43,7 @@ def tratamento_dados(df_join):
     st.dataframe(df_filtro[filtro_concluidos])
     st.subheader('Tarefas em andamento')
     st.dataframe(df_filtro[~filtro_concluidos])
-    media_reprogramacao = df_filtro[~filtro_concluidos].qtde_dias.mean()
+    media_reprogramacao = df_filtro[~filtro_concluidos].qtde_dias.astype('timedelta64[D]').mean()
     st.write(f'A reprogramação acarretou em um avanço médio de {media_reprogramacao} dias')
 
 
