@@ -6,13 +6,10 @@ unrtf
 poppler-utils 
 tesseract-ocr 
 tesseract-ocr-eng
-flac 
-ffmpeg 
-lame
+tesseract-ocr-por
 libmad0 
 libsox-fmt-mp3 
 sox 
 libjpeg-dev 
-swig 
 libpulse-dev
 zlib1g-dev
