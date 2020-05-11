@@ -41,10 +41,9 @@ def carregar_dataframe(nom_arquivo, encoding = 'UTF-8'):
 
 
 if __name__ == "__main__":
-    df_1 = carregar_dataframe('9190_v1')
-    df_2 = carregar_dataframe('9190_v2')
-    df_2.columns = ['cod_tarefa', 'descricao_atual', 'start_atual', 'end_atual']
-    df_join = df_1.set_index('cod_tarefa').join(df_2.set_index('cod_tarefa'))
-    df_filtro = df_join[df_join['end_atual'] != df_join['end']]
-    with pd.ExcelWriter('resultado.xlsx') as writer:
-        df_filtro.to_excel(writer)
+    nom_arquivo = 'rel_.pdf'
+    text = textract.process(f'{nom_arquivo}', method='tesseract')
+    linhas = re.findall(r'\n+.+', text.decode('UTF-8'))
+    with open('result.txt','w') as arq:
+        arq.writelines(linhas)
+    print(''.join(linhas))
