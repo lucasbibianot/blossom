@@ -66,7 +66,7 @@ def sidebar_parametros():
             time.sleep(0.1)
             my_bar.progress(percent_complete + 1)
         place.success(
-            'Te amo muito Liliany, você é muito especial. Perdoe as minhas falhas...')
+            'Te amo muito Liliany, você é muito especial, é a mulher da minha vida. Perdoe as minhas falhas...')
         st.balloons()
     if uploaded_v1 is not None:
         with open(fp_v1, 'wb') as writer:
