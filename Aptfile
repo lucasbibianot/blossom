@@ -7,9 +7,6 @@ poppler-utils
 tesseract-ocr 
 tesseract-ocr-eng
 tesseract-ocr-por
-flac 
-ffmpeg 
-lame
 libmad0 
 libsox-fmt-mp3 
 sox 
