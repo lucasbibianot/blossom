@@ -21,7 +21,8 @@ def carregar_cronograma(file_v1, file_v2):
     df_1 = ler_pdf.carregar_dataframe(file_v1)
     df_2 = ler_pdf.carregar_dataframe(file_v2)
     df_2.columns = ['cod_tarefa', 'descricao_atual',
-                    'start_atual', 'end_atual']
+                    'start_atual', 'end_atual', 'perc']
+    df_2 = df_2[df_2['perc']!= '100%']
     return df_1.set_index('cod_tarefa').join(df_2.set_index('cod_tarefa'))
 
 
